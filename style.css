@@ -1,0 +1,109 @@
+/* Genel Stiller */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Sayfa Arkaplanı */
+body {
+    background-color: #2C2F33;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Üst üste hizalama */
+}
+
+/* Giriş Ekranı */
+.login-container {
+    background-color: #23272A;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #5B6EAD; /* Hafif bir border */
+    background-color: #2C2F33; /* Koyu arka plan */
+    color: white; /* Yazı rengini beyaz yaptık */
+    outline: none; /* Odaklandığında mavi çerçeveyi kaldırır */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7289DA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5B6EAD;
+}
+
+/* Sohbet Alanı */
+.chat-container {
+    width: 400px;
+    background-color: #23272A;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: none; /* Başlangıçta gizli olacak */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    background-color: #2C2F33;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    border: 1px solid #5B6EAD;
+}
+
+/* Sohbet Mesajları */
+.chat-messages div {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #3B3E45;
+}
+
+/* Sohbet Girişi */
+.chat-input {
+    display: flex;
+    margin-top: 10px;
+    gap: 5px; /* Buton ile input arasına boşluk ekledik */
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #5B6EAD;
+    background-color: #2C2F33;
+    color: white;
+}
+
+.chat-input button {
+    flex-shrink: 0;
+    padding: 10px 15px;
+}
